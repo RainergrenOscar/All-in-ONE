@@ -1,17 +1,25 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import "./Landingpage.scss"
+import landingImage from "../img/Magnifier.png"
 
 const Landingpage = () => {
   return (
     <section className='landingsection'>
-      <div className='landingsection__container'>
-      <h1> WELCOME TO ALL IN ONE.</h1>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In iusto consectetur, repellendus possimus harum praesentium nihil beatae necessitatibus perferendis? Aut, repellat dignissimos. Perspiciatis, illo voluptatem iusto libero consequatur numquam, dignissimos adipisci dolorem delectus architecto illum incidunt minus, soluta esse. Atque.</p>
-      <div className='landingsection__container__links'>
-        <Link to="/cryptotrackerapi"><button>Crypto Tracker</button></Link>
-        <Link to="/randomfactsapi"><button>Random Facts</button></Link>
-        <Link to="/recipeapi"><button>Recipe</button></Link>
+      <div className="container">
+        <div className="container__split">
+          <div className="container__split__left">
+            <h1>Welcome to all in one.</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque amet, officia ab voluptatibus enim quis ex corrupti eveniet error dicta voluptatem optio! Cupiditate, quae molestias! Itaque ad explicabo architecto? Possimus.</p>
+          </div>
+          <div className="container__split__right">
+            <img src={landingImage} alt="" />
+          </div>
+        </div>
+        <div className='container__buttons'>
+          <Link to="/"><button>Crypto Tracker</button></Link>
+          <Link to="/"><button>Crypto Tracker</button></Link>
+          <Link to="/"><button>Crypto Tracker</button></Link>
         </div>
       </div>
   </section>)

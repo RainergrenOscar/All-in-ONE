@@ -1,0 +1,23 @@
+.coin {
+  width: 150px;
+  height: 125px;
+  background-color: rgb(228, 228, 228);
+  color: rgb(56, 56, 56);
+  border-radius: 30px;
+  margin-top: 10px;
+  font-size: 12px;
+  padding: 5px;
+  .item {
+    text-align: center;
+  }
+  img {
+    max-width: 20px;
+    position: relative;
+    top: -8px;
+  }
+  p {
+    position: relative;
+    top: -8px;
+    font-weight: 600;
+  }
+}
