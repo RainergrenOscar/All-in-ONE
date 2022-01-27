@@ -1,3 +1,4 @@
+@import "../../../app.scss";
 .cSection {
   width: 100%;
   height: 90vh;
@@ -41,14 +42,28 @@
             margin-bottom: 3rem;
             text-align: center;
             width: 100%;
+            color: white;
             input {
-              width: 300px;
-              height: 35px;
-              border-radius: 25px;
-              border: none;
-              outline: none;
-              background: rgb(230, 230, 230);
-              padding-left: 10px;
+              background: #5e5df0;
+              border-radius: 999px;
+              box-shadow: #5e5df0 0 10px 20px -10px;
+              box-sizing: border-box;
+              color: #ffffff;
+              cursor: pointer;
+              position: relative;
+              top: 2px;
+              font-size: 16px;
+              font-weight: 500;
+              line-height: 24px;
+              opacity: 1;
+              outline: 0 solid transparent;
+              padding: 10px 25px;
+              border: 0;
+              font-family: $font;
+              width: 250px;
+              &::placeholder {
+                color: #ffffff;
+              }
             }
           }
           .display {

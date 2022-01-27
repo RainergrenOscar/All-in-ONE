@@ -43,6 +43,7 @@
           &__buttons {
             width: 100%;
             text-align: center;
+            margin-bottom: 3rem;
             button {
               background: #5e5df0;
               border-radius: 999px;
@@ -54,17 +55,17 @@
               top: 2px;
               font-family: $font;
               font-size: 16px;
-              font-weight: 700;
+              font-weight: 500;
               line-height: 24px;
               opacity: 1;
               outline: 0 solid transparent;
               padding: 10px 25px;
               border: 0;
+              width: 250px;
             }
           }
           &__container__card {
             width: 100%;
-            border: 1px solid black;
             &__header {
               text-align: center;
             }
@@ -72,6 +73,56 @@
             &__split {
               display: grid;
               grid-template-columns: 1fr 1fr;
+              width: 100%;
+              @media screen and (max-width: 800px) {
+                grid-template-columns: 1fr;
+              }
+              &__left {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                img {
+                  width: 300px;
+                  height: auto;
+                  border-radius: 25px;
+                }
+              }
+              &__right {
+                width: 100%;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                @media screen and (max-width: 800px) {
+                  justify-content: center;
+                }
+                ul {
+                  background: beige;
+                  width: 300px;
+                  height: 235px;
+                  padding: 2rem 0;
+                  padding-left: 2rem;
+                  border-radius: 25px;
+                  margin-right: 2rem;
+                  @media screen and (max-width: 1200px) {
+                    text-align: center;
+                    padding-left: 0;
+                    margin: 2rem auto;
+                  }
+                  li {
+                    margin-bottom: 1rem;
+                    text-decoration: none;
+                    list-style-type: none;
+                  }
+                }
+              }
+            }
+            &__instruction {
+              background: rgb(227, 253, 255);
+              margin: 0 2rem;
+              border-radius: 10px;
+              padding: 0.5rem 3rem;
+              margin-bottom: 2rem;
             }
           }
         }

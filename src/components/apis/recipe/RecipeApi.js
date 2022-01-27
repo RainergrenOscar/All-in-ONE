@@ -16,6 +16,13 @@ const RecipeApi = () => {
 
   console.log(recipe)
 
+  const reFetch = () => {
+    axios.get("https://www.themealdb.com/api/json/v1/1/random.php")
+      .then((res) => {
+        setRecipe(res.data.meals[0])
+      })
+  }
+
 
   return <section className='rSection'>
       <div className="rSection__container">
@@ -27,7 +34,7 @@ const RecipeApi = () => {
           <div className="rSection__container__split__right">
           <div className="content">
             <div className="content__buttons">
-              <button>Need a new recipe?</button>
+              <button onClick={reFetch}>New recipe</button>
             </div>
             <div className="content__container">
               <div className="content__container__card">
@@ -35,15 +42,18 @@ const RecipeApi = () => {
                   <h1>{recipe.strMeal}</h1>
                 </div>
                 <div className="content__container__card__split">
-                  <img src={recipe.strMealThumb} style={{width: "100px"}}alt="" />
-                <div className="content__container__card__ingredients">
-                  <ul>
+                  <div className="content__container__card__split__left">
+                    <img src={recipe.strMealThumb}  alt="" />
+                  </div>
+                  <div className="content__container__card__split__right">
+                    <ul>
                     <li>{recipe.strIngredient1}</li>
                     <li>{recipe.strIngredient2}</li>
                     <li>{recipe.strIngredient3}</li>
                     <li>{recipe.strIngredient4}</li>
                     <li>{recipe.strIngredient5}</li>
                     <li>{recipe.strIngredient6}</li>
+                      <li>{recipe.strIngredient7}</li>
                   </ul>
                   </div>
                 </div>
