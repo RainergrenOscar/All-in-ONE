@@ -35,6 +35,7 @@ const RecipeApi = () => {
           <div className="content">
             <div className="content__buttons">
               <button onClick={reFetch}>New recipe</button>
+              <a href={recipe.strYoutube}><button>Tutorial</button></a>
             </div>
             <div className="content__container">
               <div className="content__container__card">

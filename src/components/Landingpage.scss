@@ -42,21 +42,27 @@
       justify-content: center;
       gap: 2rem;
       button {
-        width: 200px;
-        height: 40px;
-        border: none;
-        border-radius: 30px;
-        outline: none;
+        background: #5e5df0;
+        border-radius: 999px;
+        box-shadow: #5e5df0 0 10px 20px -10px;
+        box-sizing: border-box;
+        color: #ffffff;
         cursor: pointer;
-        background-color: rgb(255, 167, 167);
-        transition: all 0.3s ease;
+        position: relative;
+        margin: 0 1rem;
+        top: 2px;
         font-family: $font;
-        font-weight: 600;
-        color: rgb(85, 85, 85);
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+        opacity: 1;
+        outline: 0 solid transparent;
+        padding: 10px 25px;
+        border: 0;
+        width: 250px;
         &:hover {
-          background-color: rgb(255, 110, 110);
-          margin-top: -0.6rem;
-          color: black;
+          background: #3f3fee;
+          margin-top: -0.4rem;
         }
       }
     }

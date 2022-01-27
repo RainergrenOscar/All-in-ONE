@@ -52,6 +52,7 @@
               color: #ffffff;
               cursor: pointer;
               position: relative;
+              margin: 0 1rem;
               top: 2px;
               font-family: $font;
               font-size: 16px;
@@ -62,10 +63,17 @@
               padding: 10px 25px;
               border: 0;
               width: 250px;
+              &:hover {
+                background: #3f3fee;
+              }
+              @media screen and (max-width: 660px) {
+                margin: 1rem;
+              }
             }
           }
           &__container__card {
             width: 100%;
+
             &__header {
               text-align: center;
             }
@@ -118,11 +126,12 @@
               }
             }
             &__instruction {
-              background: rgb(227, 253, 255);
+              background: rgb(187, 219, 255);
               margin: 0 2rem;
               border-radius: 10px;
               padding: 0.5rem 3rem;
               margin-bottom: 2rem;
+              margin-left: 1rem;
             }
           }
         }
