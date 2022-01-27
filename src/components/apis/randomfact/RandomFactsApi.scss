@@ -1,0 +1,44 @@
+.rSection {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  &__container {
+    width: 1400px;
+    @media screen and (max-width: 1200px) {
+      margin: 0 3rem;
+      margin-bottom: 3rem;
+      text-align: center;
+    }
+    &__split {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+
+      @media screen and (max-width: 1200px) {
+        grid-template-columns: 1fr;
+      }
+      &__left {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 2rem;
+
+        h1 {
+          font-size: 3rem;
+          margin-bottom: 0;
+          color: rgb(41, 41, 41);
+        }
+        p {
+          color: #bdbdbd;
+        }
+      }
+      &__right {
+        height: 80vh;
+        margin-bottom: 2rem;
+        .content {
+          padding-top: 2rem;
+        }
+      }
+    }
+  }
+}

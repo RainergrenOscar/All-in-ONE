@@ -13,6 +13,7 @@ const CryptoTrackerApi = () => {
       .then((res) => {
         setCoins(res.data.coins)
       })
+    console.log(coins)
   }, [])
 
   const filteredCoins = coins.filter((coin) => {

@@ -21,7 +21,7 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        margin-right: 2rem;
+        margin: 0 2rem;
         h1 {
           font-size: 3rem;
           margin-bottom: 0;
@@ -32,10 +32,11 @@
         }
       }
       &__right {
-        height: 50rem;
+        height: 80vh;
+        margin-bottom: 2rem;
 
         .content {
-          padding-top: 5rem;
+          padding-top: 2rem;
           .input {
             margin-bottom: 3rem;
             text-align: center;
