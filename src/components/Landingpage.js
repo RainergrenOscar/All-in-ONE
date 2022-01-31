@@ -17,9 +17,9 @@ const Landingpage = () => {
           </div>
         </div>
         <div className='container__buttons'>
-          <Link to="/"><button>Crypto Tracker</button></Link>
-          <Link to="/"><button>Crypto Tracker</button></Link>
-          <Link to="/"><button>Crypto Tracker</button></Link>
+          <Link to="/cryptotrackerapi"><button>Crypto Tracker</button></Link>
+          <Link to="/randomfactsapi"><button>Random Facts</button></Link>
+          <Link to="/recipeapi"><button>Recipe Generator</button></Link>
         </div>
       </div>
   </section>)
