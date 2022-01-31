@@ -20,7 +20,7 @@ const Navbar = () => {
                         <NavLink
                             to="/cryptotrackerapi"
                             className="header__content__nav__links"
-                            activeClassName="active">
+                            >
                             Crypto Tracker
                         </NavLink> 
                         </li>
@@ -28,15 +28,15 @@ const Navbar = () => {
                         <NavLink
                             to="/randomfactsapi"
                             className="header__content__nav__links" 
-                            activeClassName="active">
-                            Random Facts
+                            >
+                            Ye Quotes
                         </NavLink> 
                         </li>
                         <li>
                         <NavLink
                             to="/recipeapi"
                             className="header__content__nav__links" 
-                            activeClassName="active">
+                            >
                             Recipe generator
                         </NavLink> 
                         </li>
