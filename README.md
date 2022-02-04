@@ -1,4 +1,4 @@
-# aio.
+# - aio.
 
 All in one is a website that have everything you need. The project was created to become better att working with different API's and different methods. The project was built using React.js and Sass.
 I also wanted to challenge myself to create a nice looking UI.
