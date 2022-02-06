@@ -22,7 +22,7 @@ const CryptoTrackerApi = () => {
 	})
 
 	return (
-		<section className='cSectioes'>
+		<section className='cSection'>
 			<div className='cSection__container'>
 				<div className='cSection__container__split'>
 					<div className='cSection__container__split__left'>
